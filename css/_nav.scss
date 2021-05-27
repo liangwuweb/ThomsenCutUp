@@ -1,0 +1,17 @@
+// Navbar----------------------------------
+header {
+    background: $white;
+    .topnav {
+        padding: 2.8rem 0;
+    }
+
+    .navbar {
+        padding: 2.8rem 0;
+        background: linear-gradient(50deg, rgba(2, 0, 36, 1) 0%, rgba(28, 61, 143, 1) 0%, rgba(6, 30, 90, 1) 100%);
+
+        .nav-link {
+            font-size: 1.8rem;
+            padding-right: 2.8rem;
+        }
+    }
+}

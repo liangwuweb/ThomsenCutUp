@@ -1,0 +1,57 @@
+// Font
+@font-face {
+	font-family: 'Roboto Medium';
+	src: url('/fonts/Roboto-Medium.woff2') format('woff2'),
+		url('/fonts/Roboto-Medium.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Roboto Bold';
+	src: url('/fonts/Roboto-Bold.woff2') format('woff2'),
+		url('/fonts/Roboto-Bold.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Roboto Regular';
+	src: url('/fonts/Roboto-Regular.woff2') format('woff2'),
+		url('/fonts/Roboto-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+// Variables
+$white: #ffffff;
+$black: #282828;
+$light-gray: #e6e6e6;
+$gray: #c3c7d0;
+$primary: #061e57;
+$secondary: #d9212d;
+
+
+// Mixins
+@mixin break-max($length) {
+	@media (max-width: $length) {
+		@content;
+	}
+}
+
+@mixin break-min($length) {
+	@media (min-width: $length) {
+		@content;
+	}
+}
+
+@mixin bg($url, $size:cover, $position: center) {
+	background-image: url($url);
+	background-size: $size;
+	background-repeat: no-repeat;
+	background-position: $position;
+}
+
