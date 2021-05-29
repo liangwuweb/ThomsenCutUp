@@ -2,7 +2,7 @@
 *,
 *:before,
 *:after {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 body {
@@ -21,21 +21,10 @@ html {
 ul {
 	list-style: none;
 	padding: 0;
-	margin: 2rem 0;
+	margin: 0;
 
 	li {
 		text-decoration: none;
-		margin-bottom: 1rem;
-		&::before {
-			content: '';
-			display: inline-block;
-			width: 5px;
-			height: 5px;
-			border-radius: 50%;
-			background: $primary;
-			vertical-align: middle;
-			margin-right: 1rem;
-		}
 	}
 }
 
@@ -93,6 +82,7 @@ a {
 .italic {
 	font-style: italic;
 }
+
 .uppercase {
 	text-transform: uppercase;
 }
@@ -172,3 +162,7 @@ a {
 	position: absolute !important;
 }
 
+// Margins
+.mb-1 {
+	margin-bottom: 1rem;
+}
