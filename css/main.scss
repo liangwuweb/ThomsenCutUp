@@ -18,11 +18,11 @@ main {
         list-style: none;
         padding: 0;
         margin: 2rem 0;
-    
+
         li {
             text-decoration: none;
             margin-bottom: 1rem;
-    
+
             &::before {
                 content: '';
                 display: inline-block;
@@ -38,9 +38,11 @@ main {
 
     .row {
         margin-top: 3rem;
+
         .content {
             width: 50%;
-            font-family: 'Roboto Medium';
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500;
 
         }
 
@@ -59,54 +61,55 @@ main {
 
 // Section 2
 .section-2 {
-    margin-top:10rem;
-    
-        .tab {
-            position: relative;
-            background: $primary;
-            font-family: 'Roboto Medium';
-            letter-spacing: .1rem;
-            display: inline-block;
-            cursor: pointer;
-            transition: all .3s ease-in;
-            // border-bottom: 50px solid $primary;
-            // border-right: 40px solid transparent;
-            // height: 0;
-            padding: 2rem 5rem 2rem 2rem;
+    margin-top: 10rem;
 
-            // span {
-            //     position: absolute;
-            //     display: inline-block;
-            //     width: max-content;
-            //     left: 35%;
-            //     top: 15px;
-            //     //transform: translate(-50%,-50%);
-                
-            // }
+    .tab {
+        position: relative;
+        background: $primary;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        letter-spacing: .1rem;
+        display: inline-block;
+        cursor: pointer;
+        transition: all .3s ease-in;
+        // border-bottom: 50px solid $primary;
+        // border-right: 40px solid transparent;
+        // height: 0;
+        padding: 2rem 5rem 2rem 2rem;
 
-            &::after {
-                content: '';
-                  width: 0;
-                    height: 0;
-                    border-bottom: 61px solid $gray;
-                    border-right: 30px solid transparent;
-                position: absolute;
-                transform: rotate(180deg);
-                right:0;
-                top: 0;
-              }
+        // span {
+        //     position: absolute;
+        //     display: inline-block;
+        //     width: max-content;
+        //     left: 35%;
+        //     top: 15px;
+        //     //transform: translate(-50%,-50%);
 
-            &:hover {
-                color: $white;
-               background: $secondary;
-            }
+        // }
+
+        &::after {
+            content: '';
+            width: 0;
+            height: 0;
+            border-bottom: 61px solid $gray;
+            border-right: 30px solid transparent;
+            position: absolute;
+            transform: rotate(180deg);
+            right: 0;
+            top: 0;
         }
+
+        &:hover {
+            color: $white;
+            background: $secondary;
+        }
+    }
 
     .dropdown-wrap {
         padding: 5rem;
         background: $light-blue;
         transition: all .3s ease-in-out;
-        
+
         h2 {
             margin-bottom: 2rem;
         }
@@ -139,47 +142,49 @@ input[type=radio] {
 
 
 
-input[type=radio]#tabOne:checked ~ .dropdown-wrap {
+input[type=radio]#tabOne:checked~.dropdown-wrap {
     #dataOne {
         display: block;
     }
 }
 
-input[type=radio]#tabTwo:checked ~ .dropdown-wrap {
+input[type=radio]#tabTwo:checked~.dropdown-wrap {
     #dataTwo {
         display: block;
     }
 }
 
-input[type=radio]#tabThree:checked ~ .dropdown-wrap {
+input[type=radio]#tabThree:checked~.dropdown-wrap {
     #dataThree {
         display: block;
     }
 }
 
-input[type=radio]#tabOne:checked ~ #labelOne {
-    background: $secondary;
-   color: $white;
-}
-
-input[type=radio]#tabTwo:checked ~ #labelTwo {
+input[type=radio]#tabOne:checked~#labelOne {
     background: $secondary;
     color: $white;
 }
 
-input[type=radio]#tabThree:checked ~ #labelThree {
+input[type=radio]#tabTwo:checked~#labelTwo {
+    background: $secondary;
+    color: $white;
+}
+
+input[type=radio]#tabThree:checked~#labelThree {
     background: $secondary;
     color: $white;
 }
 
 // Table
-table, th, td {
+table,
+th,
+td {
     padding: 2rem;
-  }
-  
-  table {
+}
+
+table {
     border-collapse: collapse;
-    width:100%;
+    width: 100%;
     border-radius: 1rem;
     overflow: hidden;
     text-align: left;
@@ -190,22 +195,25 @@ table, th, td {
     }
 
     tbody {
-        th, td {
+
+        th,
+        td {
             border: 1px solid $gray;
             color: lighten($primary, 20%);
             background: $white;
-            font-family: 'Roboto Medium';
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500;
         }
     }
-  }
-  
+}
+
 
 // Footer
 footer {
     .footer {
         font-size: 1.8rem;
         background: $white;
-        padding: 3.5rem 0; 
+        padding: 3.5rem 0;
 
         a {
             display: block;
@@ -227,6 +235,3 @@ footer {
         background: $secondary;
     }
 }
-
-
-

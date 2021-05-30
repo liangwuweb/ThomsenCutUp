@@ -6,7 +6,8 @@
 }
 
 body {
-	font-family: 'Roboto Regular';
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
 	font-size: 1.6rem;
 	letter-spacing: 0;
 	line-height: 1.3;
@@ -112,7 +113,9 @@ a {
 
 // Font weight
 .font-bold {
-	font-family: 'Roboto Bold';
+	font-family: 'Roboto',
+		sans-serif;
+	font-weight: 700;
 }
 
 // Display
