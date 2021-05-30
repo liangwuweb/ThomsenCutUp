@@ -593,7 +593,8 @@ header .navbar .nav-wrap .dropdown .nav-dropdown-item:hover a {
 }
 header .navbar .nav-wrap .dropdown .nav-dropdown-item a {
   text-transform: uppercase;
-  font-family: "Roboto Bold";
+  font-family: "Roboto";
+  font-weight: 700;
   color: #282828;
   letter-spacing: 0.05em;
   padding: 15px 0px;
